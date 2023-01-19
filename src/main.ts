@@ -84,7 +84,7 @@ gsap.fromTo(l1, {
   scale: 1,
   x: 0,
   y: 0,
-  duration: 12.3,
+  duration: 12,
 })
 
 gsap.fromTo(l2, {
@@ -99,6 +99,6 @@ gsap.fromTo(l2, {
   scale: 1,
   x: 0,
   y: 0,
-  duration: 12.3,
+  duration: 12,
   onComplete: fadeIn,
 })
