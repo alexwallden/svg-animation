@@ -17,7 +17,8 @@ function fadeIn() {
     paths.forEach((path) => {
       gsap.fromTo(path,{fill: 'rgb(12, 19, 34)'}, {
         fill: 'rgb(78, 255, 198)',
-        duration: 3
+        duration: 3,
+        ease: "bounce.out",
       })
     })
     gsap.fromTo(line, {stroke: 'rgb(12, 19, 34)'}, {
@@ -26,20 +27,6 @@ function fadeIn() {
     })
   }
 }
-
-paths.forEach((path) => {
-  gsap.to(path, {
-    fill: 'rgb(12, 19, 34)',
-    delay: 8,
-    duration: 4
-  })
-});
-
-gsap.to(line, {
-  stroke: 'rgb(12, 19, 34)',
-  delay: 8,
-  duration: 4
-})
 
 gsap.to(e1, {
   motionPath: {
