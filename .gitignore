@@ -24,4 +24,4 @@ dist-ssr
 *.sw?
 
 # Github
-deploy.yml
+# deploy.yml
